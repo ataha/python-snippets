@@ -1,7 +1,14 @@
 #!/usr/bin/python3
-import re, pyperclip
+import re
 import string, random
 
+"""Security is one of the most crucial parts of our lives.
+   The importance of security is increasing day by day as most things are going online.
+   Passwords come into light as we talk about security.
+"""
+
+"""This password generator that helps us generate random and strong passwords quickly.
+   It will also check and confirm if this generated password is strong enough"""
 
 # Strong Password Regexes
 pass_length_regex = re.compile(r'.{12,}')                   # >= 12 characters
@@ -30,17 +37,13 @@ def good_pass_check(text):
     else:
         print('That\'s a strong password. Remember to use it for one site only.')
 
-# Retrieve Password from clipboard
-#passWord = str(pyperclip.paste())
-
-# Run it through the function and print relevant message to the console
-#good_pass_check(passWord)
 
 characters = list(string.ascii_letters + string.digits + "~!@#$%^&-+[{]}.*/|()_")
 def generate_strong_password():
     length = int(input("Enter password length: "))
     passWord = "".join(random.choice(characters) for x in range(length))
-    print(f"Your New password is  {passWord}")
+    print(f"\nYour New password is:  {passWord}")
+    print(".....")
     good_pass_check(passWord)
 
 generate_strong_password()
