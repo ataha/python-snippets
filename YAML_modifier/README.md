@@ -28,7 +28,7 @@ python script.py <file_name> <field1=value1> <field2=value2>
 For example, to update the version and author fields in a YAML file named config.yaml, you would run:
 
 ```bash
-python script.py config.yaml version=1.2.3 author="John Doe"
+python script.py config.yaml metadata.name="myDeploymentApp" spec.comment="Testing Deployment"
 ```
 
 Make sure to enclose field values in double quotes if they contain spaces or special characters.
