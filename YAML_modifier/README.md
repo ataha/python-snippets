@@ -17,7 +17,7 @@ This script allows you to update specific fields in a YAML file by providing fie
 ## Usage
 
 ```bash
-python script.py <file_name> <field1=value1> <field2=value2> ...
+python script.py <file_name> <field1=value1> <field2=value2>
 
 
 <file_name>: The path to the YAML file you want to update.
