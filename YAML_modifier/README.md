@@ -22,7 +22,9 @@ python script.py <file_name> <field1=value1> <field2=value2>
 ```
 
 <file_name>: The path to the YAML file you want to update.
+
 <field1=value1>, <field2=value2>, etc.: Field-value pairs specify the fields you want to update in the YAML file.
+
 For example, to update the version and author fields in a YAML file named config.yaml, you would run:
 
 ```bash
